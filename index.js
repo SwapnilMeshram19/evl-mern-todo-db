@@ -16,6 +16,7 @@ function logger(req,res,next){
 app.use(logger);
 
 app.use('/user',require("./routes/user_route"));
+app.use('/todo',require("./routes/todo_route"));
 
 
 connectDb()
